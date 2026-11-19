@@ -1,0 +1,42 @@
+{
+  "client_csv": {
+    "path": "C:\\GCI Competition\\05. Final Assignment (due Nov 28)\\Final Assignment\\telecom\\Client.csv",
+    "sha256": "264a58512dc857fff29e11ef43fd53bc4407be23aac9dcc2c0df23536c800778",
+    "bytes": 17937775
+  },
+  "record_csv": {
+    "path": "C:\\GCI Competition\\05. Final Assignment (due Nov 28)\\Final Assignment\\telecom\\Record.csv",
+    "sha256": "5bd563bb77b357920832510b78d6842060d928cb5de8c0aaf79aa2a647e2271a",
+    "bytes": 30182432
+  },
+  "tutorial_ipynb": {
+    "path": "C:\\GCI Competition\\05. Final Assignment (due Nov 28)\\Final Assignment\\tutorial.ipynb",
+    "sha256": "fb62cf4c39d32dd0b8f20908d682e1b0d029dbd3db51e4861a805a957930dae6",
+    "bytes": 1110775
+  },
+  "readme_docx": {
+    "path": "C:\\GCI Competition\\05. Final Assignment (due Nov 28)\\Final Assignment\\README.docx",
+    "sha256": "15328594161bb07cebefa73f643e04539c87a81ff4c2d76093c02f9c67f64aa2",
+    "bytes": 791212
+  },
+  "dataset_overview_docx": {
+    "path": "C:\\GCI Competition\\05. Final Assignment (due Nov 28)\\Final Assignment\\ENG_Company _A_ Dataset Overview.docx",
+    "sha256": "9953e825565d5278d2f65082e425be42d9a53b453fe84b35903bd9fc7ca4660b",
+    "bytes": 787254
+  },
+  "sample1_pptx": {
+    "path": "C:\\GCI Competition\\05. Final Assignment (due Nov 28)\\Sample Slides from Past Outstanding Students\\Sample1.pptx",
+    "sha256": "f8d46d281f1bd0f4794795eb3615e425863929f58178b31ff1afa5251878e593",
+    "bytes": 1362670
+  },
+  "sample2_pptx": {
+    "path": "C:\\GCI Competition\\05. Final Assignment (due Nov 28)\\Sample Slides from Past Outstanding Students\\Sample2.pptx",
+    "sha256": "3e818eda6f71492efe61ff6cc056bbca261e257eb29bab911292c2ab85347828",
+    "bytes": 1271054
+  },
+  "tutorial_pdf": {
+    "path": "C:\\GCI Competition\\05. Final Assignment (due Nov 28)\\final_assignment_tutorial.pdf",
+    "sha256": "407b77b36f98ca98922afcb41e83bf9e068ca55b6f41fbc5561208a74d7bdc11",
+    "bytes": 511238
+  }
+}
