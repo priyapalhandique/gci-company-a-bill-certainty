@@ -23,12 +23,18 @@ and code bundle on the first code cell; no Drive mount or local setup is needed.
 
 ## Reproducibility
 
-The notebook downloads the release asset `gci_company_a_bundle.zip` and verifies
-its SHA-256 before extraction. It then verifies `Client.csv` and `Record.csv`
-against `source_hashes.json` before training.
+The notebook downloads the v2 release asset `gci_company_a_bundle_v2.zip` and
+verifies its SHA-256 before extraction. It then verifies `Client.csv` and
+`Record.csv` against `source_hashes.json` before training.
 
 Release asset SHA-256:
-`d595cc405cdee698a12cffe68c325842da18dfb16836f1b90da3d3ec42999e46`
+`64397993e675e1e14e5d492d91e7481520d08e98497d1a93debe2d393b50cb14`
+
+v2 fixes a Colab pandas 3.x failure in the fairness audit: the old
+`groupby(..., dropna=False)` call could raise
+`ValueError: Categorical categories cannot be null` on string columns with
+missing values. The audit now groups on an explicit object-cast label array and
+keeps a separate `missing` group.
 
 The data are redistributed only so the assignment notebook is reproducible in
 Google Colab. They remain the property of GCI World / Company A and are not for
