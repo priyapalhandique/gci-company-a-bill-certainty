@@ -226,9 +226,13 @@ def group_audit(df: pd.DataFrame, y: np.ndarray, p: np.ndarray, col: str, frac: 
     cutoff = np.sort(p)[-k]
     selected = p >= cutoff
     overall_tpr = float(y[selected].mean())
+    # Group with boolean masks rather than groupby: pandas raises
+    # "Categorical categories cannot be null" for NaN group keys in some
+    # versions, including the Colab runtime. Missing values get their own group.
+    labels = df[col].astype(object).where(df[col].notna(), "missing").to_numpy()
     groups = []
-    for value, idx in df.groupby(col, dropna=False).groups.items():
-        idx = np.asarray(idx)
+    for value in pd.unique(labels):
+        idx = np.flatnonzero(labels == value)
         sel = selected[idx]
         groups.append(
             {
